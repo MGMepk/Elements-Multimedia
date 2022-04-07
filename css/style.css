@@ -1,0 +1,321 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#volver {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    font-size: 20px;
+}
+
+a {
+    color: rgba(11, 11, 11, 0.27);
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+main {
+    padding: 0 auto auto;
+}
+
+.card {
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #CBE5F3;
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+
+.info:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(10px);
+    background-size: contain;
+    opacity: 0.45;
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+
+.foto_1 {
+    background-image: url(../img/Diluvio_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foto_info_1:before {
+    background-image: url(../img/Diluvio_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foto_2 {
+    background-image: url(../img/Burguer_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foto_info_2:before {
+    background-image: url(../img/Burguer_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foto_3 {
+    background-image: url(../img/Delfines_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foto_info_3:before {
+    background-image: url(../img/Delfines_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.cardVideo {
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 500px;
+    max-width: 100%;
+    max-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.cardVideo:hover {
+    transform: scale(1.05);
+}
+
+.infoVideo {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #CBE5F3;
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+
+.infoVideo:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(10px);
+    background-image: url(../img/abril.jpg);
+    background-size: contain;
+    opacity: 0.5;
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before,
+.cardVideo:hover .infoVideo,
+.cardVideo:hover .infoVideo:before {
+    transform: translateY(0) translateZ(0);
+}
+
+.title {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.description {
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* General layout and typography stuff */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    transition: all .3s ease
+}
+
+body {
+    font-family: Open Sans, Verdana, sans-serif;
+    color: rgba(0, 0, 0, .87);
+    font-weight: 400;
+    line-height: 1.45
+}
+
+body {
+    background: radial-gradient(#7FC3E7, #fafafa);
+}
+
+header {
+    min-height: 200px;
+    max-width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, .87)
+}
+
+header>* {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header>:last-child {
+    margin-bottom: 0
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+    color: #1c5b72;
+    font-size: 2.618em
+}
+
+@media (min-width:800px) and (max-width:1378px) {
+    h1 {
+        font-size: 4.236em;
+        font-weight: 300;
+    }
+
+
+    p {
+        margin-bottom: 1.3em;
+        line-height: 1.618;
+        font-size: 1.3em;
+    }
+
+    .grid {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+}
+
+@media (max-width:800px) {
+    p {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 2.8em;
+        font-weight: 300;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .description {
+        margin: 0;
+        padding: 0 20px 20px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .grid {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .card {
+        border-radius: 16px;
+        margin: 0 auto;
+        width: 500px;
+        height: auto;
+        max-width: 100%;
+        min-height: 300px;
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+            0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+    }
+
+    .info {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background: radial-gradient(#7FC3E7, #fafafa);
+        transform: translateY(100%) translateY(-88px) translateZ(0);
+        transition: transform 0.5s ease-out;
+    }
+
+    .foto_1 {
+        background-image: url(../img/Diluvio_800.jpg);
+    }
+
+    .foto_info_1:before {
+        background-image: url(../img/Diluvio_800.jpg);
+    }
+
+    .foto_2 {
+        background-image: url(../img/Burguer_800.jpg);
+    }
+
+    .foto_info_2:before {
+        background-image: url(../img/Burguer_800.jpg);
+    }
+
+    .foto_3 {
+        background-image: url(../img/Delfines_800.jpg);
+    }
+
+    .foto_info_3:before {
+        background-image: url(../img/Delfines_800.jpg);
+    }
+}

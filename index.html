@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements Multimedia</title>
+    <script
+      src="https://kit.fontawesome.com/4a87360503.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Elements Multimedia</h1>
+    </header>
+    <main>
+      <div id="volver">
+        <a href="javascript: window.scrollTo(0,0)">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i> </span
+        ></a>
+      </div>
+      <div class="grid">
+        <div class="card foto_1">
+          <div class="info foto_info_1">
+            <h1 class="title">Diluvio</h1>
+            <p class="description">
+              Foto tomada en clase durante una lluvia intensa con truenos, casi
+              nos quedamos sin internet en más de una ocasión esa tarde.
+            </p>
+          </div>
+        </div>
+        <div class="card foto_2">
+          <div class="info foto_info_2">
+            <h1 class="title">Burguer</h1>
+            <p class="description">La cebolla frita cubre gran parte de esta deliciosa burguer
+               de carne mechada de cerdo con salsa barbacoa, 
+               lechuga y pepino laminado</p>
+          </div>
+        </div>
+
+        <div class="card foto_3">
+          <div class="info foto_info_3">
+            <h1 class="title">Delfines</h1>
+            <p class="description">Decoración en mosaico sobre las escaleras de uno de los 
+              puentes para cruzar el río.</p>
+          </div>
+        </div>
+
+        <div class="cardVideo">
+          <video
+            width="500"
+            height="300"
+            controllist="nodownload"
+            muted
+            controls
+          >
+            <source src="media/VID-20200316-WA0029.mp4" type="video/mp4" />
+            <track
+              src="media/subs_ES.vtt"
+              kind="subtitles"
+              srclang="es"
+              label="Spanish"
+            />
+            <track
+              src="media/subs_CAT.vtt"
+              kind="subtitles"
+              srclang="cat"
+              label="Catalan"
+            />
+            <track
+              src="media/subs_Abril.vtt"
+              kind="subtitles"
+              srclang="abril"
+              label="abril"
+            />
+          </video>
+          <div class="infoVideo">
+            <h1 class="title">Abril</h1>
+            <p>La gata loca de la casa.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
